@@ -4,8 +4,22 @@ import LoginScreen from './screens/LoginScreen';
 import BattleScreen from './screens/BattleScreen';
 
 const MainNavigator = createStackNavigator({
-  Home: {screen: LoginScreen},
-  Profile: {screen: BattleScreen},
+  Home: {
+    screen: LoginScreen,
+    navigationOptions: ({ navigation }) => {
+      return {
+        headerShown: false
+      }
+    }
+  },
+  Profile: {
+    screen: BattleScreen,
+    navigationOptions: ({ navigation }) => {
+      return {
+        headerShown: false
+      }
+    }
+  },
 });
 
 const App = createAppContainer(MainNavigator);

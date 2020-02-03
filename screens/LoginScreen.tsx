@@ -1,8 +1,12 @@
 import React from 'react';
 import { View, Button } from 'react-native';
 
-export default function LoginScreen() {
-    const {navigate} = this.props.navigation;
+interface LoginScreenProps {
+  navigation: any;
+}
+
+export default function LoginScreen(props: LoginScreenProps) {
+  const {navigate} = props.navigation;
 
   return (
     <View>
