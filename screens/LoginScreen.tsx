@@ -14,6 +14,11 @@ export default function LoginScreen(props: LoginScreenProps) {
             title='Continue'
             onPress={() => navigate('Profile', {name: 'Jane'})}
         />
+
+        <Button
+            title='Test'
+            onPress={() => navigate('Test')}
+        />
     </View>
   );
 }

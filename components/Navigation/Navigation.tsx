@@ -2,6 +2,7 @@ import {createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import LoginScreen from './../../screens/LoginScreen';
 import BattleScreen from './../../screens/BattleScreen';
+import Test from './../../screens/Test';
 
 const MainNavigator = createStackNavigator({
   Home: {
@@ -14,6 +15,14 @@ const MainNavigator = createStackNavigator({
   },
   Profile: {
     screen: BattleScreen,
+    navigationOptions: ({ navigation }) => {
+      return {
+        headerShown: false
+      }
+    }
+  },
+  Test: {
+    screen: Test,
     navigationOptions: ({ navigation }) => {
       return {
         headerShown: false
