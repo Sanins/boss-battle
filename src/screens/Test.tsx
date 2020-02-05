@@ -1,5 +1,5 @@
 import React from 'react';
-import * as actions from '../redux/actions';
+import * as actions from './../redux/actions/actions';
 import {useSelector, useDispatch} from 'react-redux';
 import { Button, Text, View } from 'react-native';
 

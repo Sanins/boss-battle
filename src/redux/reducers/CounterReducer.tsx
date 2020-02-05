@@ -1,10 +1,8 @@
-import { createStore } from 'redux';
-
 const initialState = {
   count: 0
 }
 
-const counterReducer = (state = initialState, action) => {
+export default (state = initialState, action) => {
   switch(action.type) {
     case 'CHANGE_COUNT':
       return {
@@ -15,5 +13,3 @@ const counterReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export default createStore(counterReducer);

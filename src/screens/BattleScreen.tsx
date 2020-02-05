@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { StyleSheet, View } from 'react-native';
-import Character from '../components/Character/Character';
+import Character from './../components/Character/Character';
 
 export default function BattleScreen() {
   const totalHealth = 100;
